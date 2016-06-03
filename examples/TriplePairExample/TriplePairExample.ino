@@ -3,14 +3,17 @@
 
 void setup() {
   // put your setup code here, to run once:
-  Pair<> c(1,1);
-  Triple<> d(1,2,1);
+  Pair<> pair1(1,1);
+  Triple<> triple1(1,2,1);
   Serial.begin(9600);
 
-  if (d> c)
-    Serial.print("Triple d >  Pair c.");
-  if  (c > d)
-    Serial.print("Pair c > Triple d");
+
+  Serial.print("Triple >  Pair?: ");
+  Serial.println((triple1 > pair1));
+  Serial.print("Triple <  Pair?: ");
+  Serial.println((triple1 < pair1));
+  Serial.print("Triple <  Pair?: ");
+  Serial.println((triple1 == pair1));
 }
 
 void loop() {
